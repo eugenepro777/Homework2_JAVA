@@ -38,7 +38,7 @@ public class Task4 {
 
     public static void calculus(double number1, double number2, String str) throws IOException{
         Logger logger = Logger.getLogger(Task4.class.getName());
-        FileHandler fh = new FileHandler("calculate_log.txt");
+        FileHandler fh = new FileHandler("calculate_log.txt", true);
         SimpleFormatter sFormat = new SimpleFormatter();
         fh.setFormatter(sFormat);
         logger.addHandler(fh);
