@@ -42,6 +42,7 @@ public class Task4 {
         SimpleFormatter sFormat = new SimpleFormatter();
         fh.setFormatter(sFormat);
         logger.addHandler(fh);
+        logger.setUseParentHandlers(false);
         double result;
         switch (str) {
             case "+" -> {
